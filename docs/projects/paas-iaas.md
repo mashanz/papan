@@ -1,6 +1,6 @@
-# Bikin PaaS/Iaas Buat Automate Deployment Python / Rusts / Go
+# Bikin PaaS/Iaas Buat Automate Deployment Rust, Python dan Go
 
-Automation Deployment Github Repository ke PaaS/IaaS, Mirip Heroku/Vercel/Netlify, tapi untuk Python, Rusts dan Go.
+Automation Deployment Github Repository ke PaaS atau IaaS. Mirip Heroku, Vercel dan Netlify, tapi untuk `Python`, `Rust` dan `Go`.
 
 ## Idea
 1. Source Code web app tersimpan di Github
@@ -11,4 +11,5 @@ Automation Deployment Github Repository ke PaaS/IaaS, Mirip Heroku/Vercel/Netlif
 6. Deployment menggunakan Container dengan Limit Resources
 7. Setiap deployment akan diberikan subdomain yang unik untuk deployment tersebut
 8. Setiap deployment akan diberikan SSL secara otomatis (Cloudflare?)
-9. Untuk Proxy menggunakan Pingora
+9. Untuk Proxy dan Load Ballancer menggunakan Pingora
+10. Infrastructure orkestrasi menggunakan Kubernetes
