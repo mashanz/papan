@@ -4,25 +4,25 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Papan Berjalan",
   description: "Baku Hantam Teknologi",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Home', link: '/' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Postingan',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Ngomongin PHP', link: '/php' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/mashanz' },
+      { icon: 'twitter', link: 'https://x.com/papanberjalan' }
     ]
   }
 })

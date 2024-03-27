@@ -4,22 +4,25 @@ layout: home
 
 hero:
   name: "Papan Berjalan"
-  text: "Baku Hantam Teknologi"
-  tagline: My great project tagline
+  text: "Baku Hantam Tech"
+  tagline: Tulisan mengandung keributan
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Mulai Baca
+      link: /mulai
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🏗️
+    title: Infrastructure
+    details: Ngomongin ndakik ndakik infrastructure
+  - icon: 🛠
+    title: Configuration
+    details: Idealisme tools yang tak pake di sinilah tempatnya
+  - icon: 📦
+    title: Packaging
+    details: Ya kadang kadang jualan, kadang kadang juga beli.
+  - icon: 🌳
+    title: Environment
+    details: Bertani dan berkebun adalah work life ballance yang paling pas
 ---
 
