@@ -10,6 +10,9 @@ hero:
     - theme: brand
       text: Mulai Baca
       link: /mulai
+  image:
+    src: ./public/papan.jpg
+    alt: PapanBerlajan
 
 features:
   - icon: 🏗️
@@ -26,3 +29,8 @@ features:
     details: Bertani dan berkebun adalah work life ballance yang paling pas
 ---
 
+<style>
+  .VPImage.image-src {
+    border-radius: 999px;
+  }
+</style>
