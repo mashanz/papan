@@ -11,13 +11,17 @@ Ketriger tulisan tim Govtech nya mas <a href="https://x.com/ibamarief">@ibamarie
 
 Tapi karena belom dapet ACC untuk bikin tulisan, gue pake use case side project aja untuk bikin PaaS/IaaS yang kurang lebih sama untuk handle massives incomming traffict (Expected 1 Juta concurent users 200K RPS / 200K QPS Read/Write Queries)
 
-Ya sekitar 500 Miliar Request Perhari.
+::: tip Trafik
+Ya sekitar 500 Miliar Request Perhari
+:::
 
 Di sini gue akan ngebahas gimana planning nya, pemilihan tech dan cost estimation.
 
 usecase di sini tidak menggunakan managed service seperti GCP/AWS yg setup load ballancing dan distribution service nya cukup mudah, 
 
+::: tip Usecase
 tapi gue coba bikin versi fully from scratch VPS atau baremetal.
+:::
 
 dan karena gue yg males nulis, akhir nya gue cicil 🤣
 (tagih aja kalo udah mulai jarang updates)
