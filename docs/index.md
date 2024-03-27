@@ -12,7 +12,7 @@ hero:
       link: /mulai
   image:
     src: /papan.jpg
-    alt: PapanBerlajan
+    alt: PapanBerjalan
 
 features:
   - icon: 🏗️
