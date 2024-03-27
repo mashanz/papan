@@ -11,7 +11,7 @@ hero:
       text: Mulai Baca
       link: /mulai
   image:
-    src: ./public/papan.jpg
+    src: /papan.jpg
     alt: PapanBerlajan
 
 features:
