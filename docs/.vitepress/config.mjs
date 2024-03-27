@@ -17,6 +17,13 @@ export default defineConfig({
         items: [
           { text: 'Ngomongin PHP', link: '/php' },
         ]
+      },
+      {
+        text: 'Projects',
+        collapsed: false,
+        items: [
+          { text: 'Bikin Platform-as-a-Services (PaaS) / Infrastucture-as-a-Services (IaaS)', link: '/projects/paas-iaas' },
+        ]
       }
     ],
 
