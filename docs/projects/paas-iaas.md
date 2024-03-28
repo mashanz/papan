@@ -91,10 +91,11 @@ Berarti perkiraan biaya untuk starting point adalah Rp 3.700.000 x 7 = Rp 25.900
 
 ### Infrastructure Aplikasi
 
-Aplikasi Cukup Sederhana, Masih menggunakan Monolith Architecture, dan menggunakan 3 Container:
+Aplikasi Cukup Sederhana, Masih menggunakan Monolith Architecture, dan menggunakan 4 Container:
 - 1 Container untuk 1 Apps
 - 1 Container untuk 1 DB 
 - 1 Container untuk 1 Bucket Storage
+- 1 Container untuk 1 Cache
 
 <iframe frameborder="0" style="width:100%;height:285px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=tsY7-0lGVVZUUPQlEOs7&title=PaaS%2FIaaS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1-LEL-ARMx0i2xQ_OdzyG2X75lTkBiC31%26export%3Ddownload"></iframe>
 
@@ -106,6 +107,23 @@ Terdapat 4 Node Replica aplikasi, 1 Write Master Dan 2 Read Replica. Serta backu
 
 ## Tech Stack
 
-Ok, kita lanjut ngomongin techstak yang akan digunakan. nanti ku lanjut lagi ya.
+Techstack yang akan digunakan paling tidak adalah techstack yang cloud agnostick, yang bisa dijalankan di Cloud Provider, VPS atau Baremetal. Jadi, ketika kita ingin migrasi ke provider berbeda, kita tidak perlu mengubah banyak hal.
 
-> Tulisan belom beres, capek nulisnya. Nanti dilanjutin lagi.
+- DNS management kita serahkan kepada `CloudFlare`
+- Load Ballancer -> `NginX`/`Pingora`
+- Container Orkestrasi -> `Kubernetes`
+- S3 Storage -> `MinIO`/`R2`
+- Database -> `PostgreSQL`/`MySQL`
+- Cache -> `Redis`/`Dragonfly`
+- Bahasa pemrograman kita ada banyak pilihan seperti:
+    - `PHP` -> `Laravel`/`CodeIgniter`
+    - `Rust` -> `Actix`/`Axum`/`Loco`
+    - `Python` -> `Django`/`Flask`/`FastAPI`/`Socketify`
+
+Mari kita benchmark dahulu setiap bahasa pemrograman tersebut.
+
+[Hasil Benchmark di sini!](/posts/benchmark)
+
+::: warning ⏳ Tobe Continue >>
+Tulisan belom beres, capek nulisnya. Nanti dilanjutin lagi.
+:::

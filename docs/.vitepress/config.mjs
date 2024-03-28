@@ -16,8 +16,11 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Postingan',
+        collapsed: false,
         items: [
-          { text: 'Ngomongin PHP', link: '/php' },
+          { text: 'Ngomongin PHP', link: '/posts/php' },
+          { text: 'Benchmark Bahasa Pemrograman dan Framework', link: '/posts/benchmark' },
+          { text: 'Perjalanan Menggunakan Rust Actix', link: '/posts/perjalanan-menggunakan-rust-actix' },
         ]
       },
       {
