@@ -1,5 +1,7 @@
 # Ngomongin PHP
 
+> 27 Maret 2024 
+
 `PHP (Hypertext Preprocessor)` atau pernah disebut `Personal Home Page`. Ini unik, Saya mulai belajar dan menggunakan bahasa ini sejak 2009 untuk membuat dashboard internal. Teknologi nya pun cukup sederhana, hanya menggunakan HTML, CSS, JavaScript, dan PHP. Server menggunakan Apache dan MySQL. Semua terbundling dalam 1 integrasi tools XAMPP.
 
 Development pun tidak menggunakan framework yang aneh aneh. Hanya PHP dan jQuery. Yup, good old days `index.php`.

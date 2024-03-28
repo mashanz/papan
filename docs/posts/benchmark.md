@@ -1,5 +1,7 @@
 # Benchmark Bahasa Pemrograman dan Framework
 
+> 28 Maret 2024 
+
 Catatan benchmark yang saya lakukan untuk pemeilihan techstack yang akan digunakan di Next Projects. 
 Di sini membandingkan beberapa bahasa pemrograman dan framework yang akan digunakan.
 

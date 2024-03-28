@@ -1,5 +1,7 @@
 # Kami Memilih Rust/Actix daripada Python/Flask/Django atau JavaScript/NodeJS Sebagai Codebase Project Baru yang Sedang Kami Kerjakan.
 
+> 16 September 2023 
+
 Beberapa waktu lalu saya diajak untuk membuat sebuah aplikasi. Ada beberapa tech stack yang kami pilih sebagai kandidat seperti NodeJS dan Python (Django). 
 
 Setelah 7 tahun lebih menggunakan Python, saya mulai merasa bosan dan ingin mencari teknologi yang lebih “menarik”.
