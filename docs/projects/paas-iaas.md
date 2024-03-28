@@ -46,4 +46,64 @@ Ekspektasi trafik kemungkinan akan sangat tinggi, maka perlu menggunakan Deploym
 
 Diagram diatas menggambarkan ada Multiple Load Ballancer yang menjadi Public IP dan Nodes dengan internal IP serta Master Node terpisah.
 
+::: info Kenapa sih design nya gini?
+Design ini adalah design tahap awal, yang bisa berubah sesuai dengan kebutuhan dan kondisi:
+- Ada 1 Master Node terpisah untu controling K8S cluster agar tidak terjadi throttle ketika high traffict dan mudah scalling nya `(ini pake ip public dulu, nanti bisa di private dan diakses via VPN)`
+- Ada 2 Slave Node untuk Load Ballancer, Karena untuk backup bila salah satu Node tumbang masih bisa handle traffict masuk `(Never Trust your Machine always On)`
+- Ada 4 Slave Node untuk Apps+Apps Replica dan DB+DB Replica dan backup bila salah ada nodes yang mati, serta hanya tersambung dengan private Network `(Agar supaya ga bisa diakses dari public, mere secure duh!)`
+:::
+
+## Monkey Calculation and Cost Estimation
+
+Nah di sini coba kita hitung ya, berapa biaya yang diperlukan untuk infrastruktur ini.
+
+<iframe src="https://giphy.com/embed/zOvBKUUEERdNm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/coding-zOvBKUUEERdNm">via GIPHY</a></p>
+
+### Limitation
+
+Server pasti memiliki keterbatasan, baik itu CPU, Memory, Storage, Network, dan Read/Write IO. Kita harus memperhitungkan hal ini. Contoh kasus saya akan mengambil spesifikasi server sebagai berikut dengan provider local / international:
+
+::: info VPS Provider Lokal
+Let's say, kita pake server dari provider ****** dengan usecase menggunakan VPS:
+:::
+
+1. Network 1 Gbps (50% on average -> 500 Mbps)
+2. CPU 16 vCPU
+3. Memory 32 GB
+4. Storage 512 GB SSD
+5. OS Ubuntu 22.04 LTS
+
+::: warning Estimasi 1 VPS
+Harga VPS server perbulan adalah Rp 3.700.000
+:::
+
+### Estimasi Biaya Tahap Awal
+
+Dari diagram, terdapat 7 Nodes Server:
+- 1 Master Node
+- 6 Slave Node
+
+::: danger Estimasi Awal
+Berarti perkiraan biaya untuk starting point adalah Rp 3.700.000 x 7 = Rp 25.900.000 / Bulan
+:::
+
+### Infrastructure Aplikasi
+
+Aplikasi Cukup Sederhana, Masih menggunakan Monolith Architecture, dan menggunakan 3 Container:
+- 1 Container untuk 1 Apps
+- 1 Container untuk 1 DB 
+- 1 Container untuk 1 Bucket Storage
+
+<iframe frameborder="0" style="width:100%;height:285px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=tsY7-0lGVVZUUPQlEOs7&title=PaaS%2FIaaS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1-LEL-ARMx0i2xQ_OdzyG2X75lTkBiC31%26export%3Ddownload"></iframe>
+
+Namun untuk memaksimalkan I/O atau Read/Write, kita perlu membuat replica di sisi App dan DB. Misal seperti di gambar di bawah ini:
+
+<iframe frameborder="0" style="width:100%;height:344px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&page-id=BHM63xhQYKMuZOWPeldW&title=PaaS%2FIaaS#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1-LEL-ARMx0i2xQ_OdzyG2X75lTkBiC31%26export%3Ddownload"></iframe>
+
+Terdapat 4 Node Replica aplikasi, 1 Write Master Dan 2 Read Replica. Serta backup DB ke Bucket.
+
+## Tech Stack
+
+Ok, kita lanjut ngomongin techstak yang akan digunakan. nanti ku lanjut lagi ya.
+
 > Tulisan belom beres, capek nulisnya. Nanti dilanjutin lagi.
