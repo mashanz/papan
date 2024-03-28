@@ -2,6 +2,8 @@
 
 Tiba tiba impulsive kepikiran ide untuk membuat PaaS/IaaS.
 
+<iframe src="https://giphy.com/embed/KT3TNkhNexOWVsMIw8" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/buzzfeed-party-happy-new-year-years-KT3TNkhNexOWVsMIw8">via GIPHY</a></p>
+
 Automation Deployment Github Repository ke PaaS atau IaaS. Mirip Heroku, Vercel dan Netlify, tapi untuk `Python`, `Rust` dan `Go`.
 
 ## Behind Story
