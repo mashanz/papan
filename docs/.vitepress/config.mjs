@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Papan Berjalan",
   description: "Baku Hantam Teknologi",
   lastUpdated: true,
+  appearance: 'force-dark',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

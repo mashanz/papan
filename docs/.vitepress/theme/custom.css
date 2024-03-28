@@ -2,4 +2,9 @@
     --vp-button-brand-bg: #d02727;
     --vp-c-brand-1: #d02727;
     --vp-c-brand-2: #ff0000;
+    --vp-code-color: #7aff59;
+}
+
+.custom-block.info a, .custom-block.info code {
+    color: var(--vp-code-color) !important;
 }

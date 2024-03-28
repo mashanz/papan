@@ -8,3 +8,9 @@ Development pun tidak menggunakan framework yang aneh aneh. Hanya PHP dan jQuery
 Saat ini saya pribadi tidak akan membuat project baru menggunakan PHP. Kebutuhan saat ini jauh berbeda dengan 15 tahun lalu. Terutama dengan behaviour `Pay-as-you-go`, `Serverless`, dan `Microservices`. Yang penggunaan jumlah resource pun sangat diperhitungkan.
 
 Jauh berbeda dengan on-premise, tidak akan ada perubahan biaya yang signifikan setiap bulannya. Namun kurang fleksibel untuk scalability.
+
+```php{2}
+<?php
+    echo "Hello and Good Bye PHP!";
+?>
+```
