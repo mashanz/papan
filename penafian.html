@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Berjalan - Penafian</title>
+    <script src="/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header" hx-trigger="load" hx-onload hx-get="/components/header" hx-target=".header" hx-swap="outerHTML"></div>
+
+    <h1>Penafian</h1>
+
+    Opini, Banyak nirtulis, Suka suka yang nulis.
+
+    <a href="https://github.com/mashanz/papan">Lokasi Gudang Tulisan di GIT</a>
+
+    <div class="footer" hx-trigger="load" hx-onload hx-get="/components/footer" hx-target=".footer" hx-swap="outerHTML"></div>
+</body>
+</html>
