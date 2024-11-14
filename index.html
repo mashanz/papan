@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papan Berjalan</title>
+    <script src="/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    Woops, raw HTML? gas cuy
+    <div class="header" hx-trigger="load" hx-onload hx-get="/components/header" hx-target=".header"></div>
+
+    <h1>Yap Yap, Papan Berjalan</h1>
+
+    <div class="footer" hx-trigger="load" hx-onload hx-get="/components/footer" hx-target=".footer"></div>
 </body>
 </html>

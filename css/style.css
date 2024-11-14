@@ -1,0 +1,11 @@
+menu {
+    padding-left: 0px;
+    ul {
+        padding-left: 0px;
+        display: flex;
+        gap: 10px;
+        li {
+            list-style-type: none;
+        }
+    }
+}
