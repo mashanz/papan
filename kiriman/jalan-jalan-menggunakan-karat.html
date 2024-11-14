@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Berjalan - Jalan Jalan Menggunakan Karat</title>
+    <script src="/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header" hx-trigger="load" hx-onload hx-get="/components/header" hx-target=".header" hx-swap="outerHTML"></div>
+
+    <article>
+        <h1>Jalan Jalan Menggunakan Karat</h1>
+        <h2>Kami Memilih Rust/Actix daripada Python/Flask/Django atau JavaScript/NodeJS Sebagai Codebase Project Baru yang Sedang Kami Kerjakan.</h2>
+
+        <p>
+            Beberapa waktu lalu saya diajak untuk membuat sebuah aplikasi. Ada beberapa tech stack yang kami pilih sebagai kandidat seperti NodeJS dan Python (Django). 
+        </p>
+
+        <p>
+            Setelah 7 tahun lebih menggunakan Python, saya mulai merasa bosan dan ingin mencari teknologi yang lebih “menarik”.
+        </p>
+
+        <p>
+            Di situ saya menemukan Rust. Membuat web menggunakan rust sangat menarik untuk saya ketimbang NodeJS dan Python. Berikut hal² yg menarik:
+        </p>
+
+        <ol>
+            <li>
+                Project menggunakan Actix(Rust) memiliki struktur yg sederhana, mudah dipahami dan mirip dengan struktur Flask(Python)
+            </li>
+            <li>
+                Hello world Docker image Actix(Rust) untuk production memiliki ukuran kurang dari <strong>30MB</strong> 🤯 
+                jauh lebih kecil dibandingkan dengan hello world NodeJS dan Flask(Python) yg ukurannya 
+                lebih dari <strong>200MB</strong> (Correct me if I am wrong on this part)
+            </li>
+            <li>
+                Compiled Binary Hello World Actix(Rust) hanya berukuran sekitar <strong>3MB 🔥</strong> dan 
+                langsung bisa di eksekusi tanpa Rust dependency (wajar sih, namanya juga compiled app) 😬 
+                kalo interpreter seperti NodeJS/Python perlu install interpreter nya yg ukurannya sudah 
+                lebih dari <strong>100MB</strong>.
+            </li>
+            <li>
+                <strong>Memory effisiensi</strong> CPU dan RAM Project Actix(Rust) bisa puluhan hingga ratusan kalilipat 
+                lebih efisien dari bahasa/framework pemrograman lain. (I will put the source here 
+                if I am not lazy, but you can find it by your self on search engine)
+            </li>
+            <li>
+                Lebih menarik dari C dan C++ karena rust memiliki <strong>Cargo</strong> sebagai official package manager 
+                dan memory safety. Konfigurasi C/C++ dependency ga ada standard yang jelas antar dependency 
+                dan just wasting too much time untuk serup ini itu. (Yup,  4 years coding in C/C++ and 
+                I have this suck skill issue 😵‍💫)
+            </li>
+            <li>
+                Lebih menarik dan stabil dari Go karena banyak fitur yang sering saya gunakan 
+                di C/C++ ada di Rust dan tidak ada di Go, yaitu low level programing (hardware). 
+                Go sering kena sudden unknown hight memory spike. 
+                <a href="https://medium.com/@siddharth.sabron/what-caused-discord-to-switch-from-go-to-rust-ccac28039d63">sumber</a>
+            </li>
+            <li>
+                Learning curve jauh lebih mudah dari C/C++ dengan banyak nya opinioted standard dan 
+                juga cargo package manager. Apalagi dengan official <a href="https://rustlings.cool">Rustlings</a> dengan jalur belajar sambil praktek.
+            </li>
+        </ol>
+
+        <p>
+            Project baru beberapa minggu sudah di tulis, and lets see whats going on. 🚀
+        </p>
+
+        <p>
+            Bagaimana dengan front end? Kami menggunakan <span>HTMX</span> + <span>AlpineJS</span> + <span>VanilaJS</span>.
+            Dan Ui Kit menggunakan <span>DaisyUI</span> karena fokus kami adalah fungsionalitas tanpa perlu menulis banyak kode JS.
+        </p>
+
+        <blockquote>
+            <p>Diperbaharui pada: 2024-11-14</p>
+        </blockquote>
+    </article>
+
+    <div class="footer" hx-trigger="load" hx-onload hx-get="/components/footer" hx-target=".footer" hx-swap="outerHTML"></div>
+</body>
+</html>
