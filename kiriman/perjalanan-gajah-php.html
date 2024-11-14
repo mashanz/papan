@@ -6,6 +6,12 @@
     <title>Papan Berjalan - Perjalanan Gajah PHP</title>
     <script src="/js/htmx.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
     <div class="header" hx-trigger="load" hx-onload hx-get="/components/header" hx-target=".header" hx-swap="outerHTML"></div>
@@ -35,7 +41,7 @@
             Jauh berbeda dengan on-premise, tidak akan ada perubahan biaya yang signifikan setiap bulannya. Namun kurang fleksibel untuk scalability.
         </p>
 
-        <pre><code>
+        <pre><code class="language-php">
     &lt;?php
         echo "Hello and Good Bye PHP!";
     ?&gt;
