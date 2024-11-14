@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Berjalan - Perjalanan Gajah PHP</title>
+    <script src="/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header" hx-trigger="load" hx-onload hx-get="/components/header" hx-target=".header" hx-swap="outerHTML"></div>
+
+    <article>
+        <h1>Perjalanan Gajah PHP</h1>
+        <h2>Ngomongin PHP</h2>
+
+        <p>
+            <span>PHP (Hypertext Preprocessor)</span> atau pernah disebut <span>Personal Home Page</span>. 
+            Ini unik, Saya mulai belajar dan menggunakan bahasa ini sejak 2009 untuk membuat dashboard internal. 
+            Teknologi nya pun cukup sederhana, hanya menggunakan HTML, CSS, JavaScript, dan PHP. 
+            Server menggunakan Apache dan MySQL. Semua terbundling dalam 1 integrasi tools XAMPP.
+        </p>
+
+        <p>
+            Development pun tidak menggunakan framework yang aneh aneh. Hanya PHP dan jQuery. Yup, good old days <span>index.php</span>.
+        </p>
+
+        <h2>Beberapa Decade Tahun berlalu</h2>
+
+        <p>
+            Saat ini saya pribadi tidak akan membuat project baru menggunakan PHP. Kebutuhan saat ini jauh berbeda dengan 15 tahun lalu. Terutama dengan behaviour <span>Pay-as-you-go</span>, <span>Serverless</span>, dan <span>Microservices</span>. Yang penggunaan jumlah resource pun sangat diperhitungkan.
+        </p>
+
+        <p>
+            Jauh berbeda dengan on-premise, tidak akan ada perubahan biaya yang signifikan setiap bulannya. Namun kurang fleksibel untuk scalability.
+        </p>
+
+        <pre><code>
+    &lt;?php
+        echo "Hello and Good Bye PHP!";
+    ?&gt;
+        </code></pre>
+
+        <blockquote>
+            <p>Diperbaharui pada: 2024-11-14</p>
+        </blockquote>
+    </article>
+
+    <div class="footer" hx-trigger="load" hx-onload hx-get="/components/footer" hx-target=".footer" hx-swap="outerHTML"></div>
+</body>
+</html>

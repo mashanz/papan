@@ -31,3 +31,7 @@ td {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+
+pre {
+    background-color:whitesmoke;
+}
