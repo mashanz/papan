@@ -9,3 +9,15 @@ menu {
         }
     }
 }
+
+blockquote {
+    margin: 0px;
+    background: blanchedalmond;
+    p {
+        padding: 1rem;
+    }
+}
+
+span {
+    color: darkred;
+}
