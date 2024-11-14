@@ -1,3 +1,7 @@
+---
+sidebar: outline
+---
+
 # Ngomongin PHP
 
 > 27 Maret 2024 
