@@ -21,3 +21,13 @@ blockquote {
 span {
     color: darkred;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+td {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
